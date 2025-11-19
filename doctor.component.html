@@ -1,0 +1,99 @@
+<!-- Doctor Page -->
+
+<div class="doctor-page">
+
+  <!-- SEARCH & FILTER -->
+  <div class="doctor-header">
+    <h2>Doctors Overview</h2>
+    <div class="search-filter">
+      <input type="text" placeholder="Search doctors..." class="search" />
+      <select class="filter">
+        <option value="all">All</option>
+        <option value="available">Available</option>
+        <option value="on-leave">On Leave</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards">
+    <div class="card">
+      <h3>Total Doctors</h3>
+      <p>18</p>
+    </div>
+
+    <div class="card">
+      <h3>Available Today</h3>
+      <p>15</p>
+    </div>
+
+    <div class="card">
+      <h3>On Leave</h3>
+      <p>3</p>
+    </div>
+
+    <div class="card">
+      <h3>Newly Joined</h3>
+      <p>2</p>
+    </div>
+  </div>
+
+  <!-- CHART -->
+  <div class="chart-box">
+    <h3>Specialty Distribution</h3>
+    <canvas id="doctorChart"></canvas>
+  </div>
+
+  <!-- DOCTOR TABLE -->
+  <div class="table-box">
+    <h3>Doctors List</h3>
+    <table>
+      <tr>
+        <th>Profile</th>
+        <th>Name</th>
+        <th>Specialty</th>
+        <th>Experience</th>
+        <th>Availability</th>
+        <th>Actions</th>
+      </tr>
+
+      <tr>
+        <td><img src="assets/img/doctor1.jpg" alt="Dr. Rahul" class="profile-pic"></td>
+        <td>Dr. Rahul</td>
+        <td>Cardiologist</td>
+        <td>10 Years</td>
+        <td><span class="badge success">Available</span></td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Remove</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td><img src="assets/img/doctor2.jpg" alt="Dr. Meera" class="profile-pic"></td>
+        <td>Dr. Meera</td>
+        <td>Neurologist</td>
+        <td>8 Years</td>
+        <td><span class="badge pending">On Leave</span></td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Remove</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td><img src="assets/img/doctor3.jpg" alt="Dr. Priya" class="profile-pic"></td>
+        <td>Dr. Priya</td>
+        <td>Dermatologist</td>
+        <td>5 Years</td>
+        <td><span class="badge success">Available</span></td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Remove</button>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+  
+</div>
