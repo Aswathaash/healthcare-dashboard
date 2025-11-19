@@ -1,0 +1,32 @@
+<div class="login-container">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <h2>Welcome – Please Login</h2>
+
+    <div class="input-group">
+      <label>Login ID</label>
+      <input type="text" formControlName="loginId" placeholder="Enter Login ID">
+      <span class="error" *ngIf="loginForm.get('loginId')?.touched && loginForm.get('loginId')?.hasError('required')">
+        Login ID is required
+      </span>
+    </div>
+
+    <div class="input-group">
+      <label>Password</label>
+      <input type="password" formControlName="password" placeholder="Enter Password">
+      <span class="error" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.hasError('required')">
+        Password is required
+      </span>
+      <span class="error" *ngIf="loginForm.get('password')?.hasError('minlength')">
+        Minimum 4 characters required
+      </span>
+    </div>
+
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+    <!-- Sign Up Button -->
+    <button type="button" class="signup-btn" (click)="goToSignup()">
+     Sign up
+    </button>
+    
+  </form>
+</div>
