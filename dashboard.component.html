@@ -1,0 +1,94 @@
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <h2 class="logo">Karnium <span>Healthcare</span></h2>
+
+   <ul>
+  <li routerLink="/dashboard" routerLinkActive="active"><i class="fas fa-home"></i> Dashboard</li>
+
+  <li routerLink="/doctor" routerLinkActive="active"><i class="fas fa-user-md"></i> Doctors</li>
+
+  <li routerLink="/patients" routerLinkActive="active"><i class="fas fa-procedures"></i> Patients</li>
+
+  <li routerLink="/appointments" routerLinkActive="active"><i class="fas fa-calendar-check"></i> Appointments</li>
+
+  <li routerLink="/settings" routerLinkActive="active"><i class="fas fa-cog"></i> Settings</li>
+</ul>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <h2 class="page-title">Healthcare Dashboard</h2>
+      <div class="profile">
+        <input type="text" placeholder="Search..." class="search" />
+        <span class="notification">🔔</span>
+      </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="cards">
+      <div class="card">
+        <h3>Total Patients</h3>
+        <p>220</p>
+      </div>
+
+      <div class="card">
+        <h3>Doctors</h3>
+        <p>18</p>
+      </div>
+
+      <div class="card">
+        <h3>Appointments Today</h3>
+        <p>34</p>
+      </div>
+
+      <div class="card">
+        <h3>Revenue</h3>
+        <p>₹ 1,20,000</p>
+      </div>
+    </div>
+
+    <!-- CHART -->
+    <div class="chart-box">
+      <h3>Weekly Appointments</h3>
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-box">
+      <h3>Today's Appointments</h3>
+      <table>
+        <tr>
+          <th>Patient</th>
+          <th>Doctor</th>
+          <th>Time</th>
+          <th>Status</th>
+        </tr>
+
+        <tr>
+          <td>Keerthana</td>
+          <td>Dr. Rahul</td>
+          <td>11:00 AM</td>
+          <td><span class="badge success">Confirmed</span></td>
+        </tr>
+
+        <tr>
+          <td>Arjun</td>
+          <td>Dr. Meera</td>
+          <td>12:30 PM</td>
+          <td><span class="badge pending">Pending</span></td>
+        </tr>
+
+      </table>
+    </div>
+     <router-outlet></router-outlet>
+
+  </main>
+
+</div>
