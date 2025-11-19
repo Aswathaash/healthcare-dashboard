@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.settings-page {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  background: #f1f5f9;
+  min-height: 100vh;
+}
+
+.settings-page h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #e0e0e0;
+  transition: 0.3s;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tabs button.active,
+.tabs button:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* CARD STYLE */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  flex: 1;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* CARD HEADER */
+.card h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* FORM GROUP */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* TOGGLE SWITCH */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input { display: none; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider { background-color: #007bff; }
+input:checked + .slider:before { transform: translateX(26px); }
+
+/* BUTTONS */
+.save-btn,
+.logout-btn,
+.delete-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.save-btn { background-color: #28a745; color: white; }
+.logout-btn { background-color: #007bff; color: white; }
+.delete-btn { background-color: #dc3545; color: white; }
+
+.save-btn:hover,
+.logout-btn:hover,
+.delete-btn:hover { opacity: 0.85; }
+
+
